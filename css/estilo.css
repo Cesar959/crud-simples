@@ -1,0 +1,827 @@
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+/* Fontes */
+
+/* Formatação geral */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #D9CCC5;
+}
+
+.container
+{
+    position: relative;
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.celula-desicao
+{
+    width: 98%;
+    margin-top: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.celula-desicao .botao-continua
+{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    background: #238332;
+    border-radius: 12px;
+    color: #ffff;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.celula-desicao .botao-cancelar
+{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    background: #F44336;
+    border-radius: 12px;
+    color: #ffff;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.modal
+{
+    display: none;
+    background: #F29F05;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    margin: auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    box-shadow: 15px 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.modal h2
+{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+    margin: 30px auto 20px auto;
+    background: transparent;
+}
+
+.modal img
+{
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    background: transparent;
+}
+
+.modal p 
+{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    background: transparent;
+    margin-top: 30px;
+}
+
+.modal .celula-desicao
+{
+    width: 100%;
+    background: transparent;
+    margin-top: 40px;
+}
+
+/* Formatação geral */
+
+
+/* pagina-inicial */
+
+#pagina-inicial header
+{
+    margin-top: 74px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pagina-inicial header h1
+{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 108px;
+    color: #000000;
+}
+
+#pagina-inicial header .botao-novo
+{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    background: #238332;
+    color: #FCF8F8;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    
+}
+
+#pagina-inicial table
+{
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border-radius: 12px 12px 0px 0px;
+}
+
+#pagina-inicial table th
+{
+    background: #DC0707;
+    text-align: center;
+}
+
+#pagina-inicial table td
+{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    padding: 15px;
+    background: #fff;
+}
+
+#pagina-inicial  table,th, td
+{
+    border: 2px solid #000000;
+}
+
+#pagina-inicial table th
+{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#pagina-inicial table .opcao
+{
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+}
+
+#pagina-inicial table .botao-alterar
+{
+    background: #00AFFA;
+    border-radius: 12px;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+#pagina-inicial table .botao-remover
+{
+    background: #F44336;
+    border-radius: 12px;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+#pagina-inicial table i
+{
+    background: transparent;
+    color: #fff;
+}
+
+
+/* pagina-inicial */
+
+
+/* pagina-cadastro */
+
+#pagina-cadastro h1
+{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 108px;
+    color: #000000;
+}
+
+#pagina-cadastro form 
+{
+    width: 100%;
+}
+
+#pagina-cadastro .celula-total
+{
+    width: 100%;
+    display: block;
+}
+
+#pagina-cadastro .celular-metade
+{
+    width: 49%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#pagina-cadastro .celula-total-campo
+{
+    width: 98%;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#pagina-cadastro label
+{
+    width: 100%;
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+#pagina-cadastro input
+{
+    width: 100%;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+#pagina-cadastro textarea
+{
+    width: 100%;
+    min-height: 300px;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+#pagina-cadastro select
+{
+    width: 100%;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+#pagina-cadastro select option
+{
+    background: #FFFFFF;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+
+/* pagina-cadastro */
+
+
+
+/* pagina-alterar */
+
+#pagina-alterar h1
+{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 108px;
+    color: #000000;
+}
+
+#pagina-alterar form 
+{
+    width: 100%;
+}
+
+#pagina-alterar .celula-total
+{
+    width: 100%;
+    display: block;
+}
+
+#pagina-alterar .celular-metade
+{
+    width: 49%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#pagina-alterar .celula-total-campo
+{
+    width: 98%;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#pagina-alterar label
+{
+    width: 100%;
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+#pagina-alterar input
+{
+    width: 100%;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+#pagina-alterar textarea
+{
+    width: 100%;
+    min-height: 300px;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+#pagina-alterar select
+{
+    width: 100%;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+#pagina-alterar select option
+{
+    background: #FFFFFF;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+
+/* pagina-cadastro */
+
+
+
+
+
+
+
+
+
+
+/* Media Querys */
+
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1152px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 992px) 
+{
+    .modal 
+    {
+        max-width: 600px;
+    }
+
+    .modal h2 
+    {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0px auto 10px auto;
+    }
+}
+@media screen and (max-width: 768px) 
+{
+    /* Formatação Geral */
+
+    .celula-desicao 
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .modal 
+    {
+        max-width: 500px;
+        height: 400px;
+    }
+
+    .modal h2 
+    {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .modal img 
+    {
+        width: 115px;
+    }
+
+    .modal p 
+    {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    /* Formatação Geral */
+
+
+    /* pagina-inicial */
+
+    #pagina-inicial table thead
+    {
+        display: none;
+    }
+
+    #pagina-inicial table tbody tr
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #pagina-inicial table, th, td 
+    {
+        border: none;
+    }
+
+    #pagina-inicial table td 
+    {
+        border: 1px solid #000000;
+    }
+
+    #pagina-inicial table i 
+    {
+        font-size: 30px;
+    }
+
+    #pagina-inicial header  h1 
+    {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    #pagina-inicial header .botao-novo 
+    {
+        font-size: 25px;
+        line-height: 25px;
+        padding: 10px 20px;
+    }
+
+    /* pagina-inicial */
+
+
+    /* pagina-cadastro */
+
+    #pagina-cadastro .celular-metade 
+    {
+        width: 100%;
+        display: block;
+    }
+
+    #pagina-cadastro .celula-total-campo 
+    {
+        width: 100%;
+    }
+
+    #pagina-cadastro h1 
+    {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+
+    /* pagina-cadastro */
+
+
+    /* pagina-alterar */
+
+    #pagina-alterar .celular-metade 
+    {
+        width: 100%;
+        display: block;
+    }
+
+    #pagina-alterar .celula-total-campo 
+    {
+        width: 100%;
+    }
+
+    #pagina-alterar h1 
+    {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+
+    /* pagina-alterar */
+}
+@media screen and (max-width: 600px)
+{
+    /* Formatação Geral */
+
+    .celula-desicao .botao-cancelar 
+    {
+        font-size: 20px;
+    }
+
+    .celula-desicao .botao-continua 
+    {
+        font-size: 20px;
+    }
+
+    .container 
+    {
+        padding: 10px;
+    }
+
+    .modal 
+    {
+        max-width: 400px;
+        height: 300px;
+        padding: 10px 10px;
+    }
+
+    .modal h2 
+    {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .modal p 
+    {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 0px;
+    }
+
+    .modal .celula-desicao 
+    {
+        margin-top: 20px;
+    }
+
+    /* Formatação Geral */
+
+    /* pagina-inicial */
+
+    #pagina-inicial header  h1 
+    {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    #pagina-inicial header .botao-novo 
+    {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    #pagina-inicial table td 
+    {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* pagina-inicial */
+
+
+    /* pagina-cadastro */
+
+    #pagina-cadastro h1 
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #pagina-cadastro label 
+    {
+        font-size: 20px;
+    }
+
+    #pagina-cadastro input 
+    {
+        font-size: 16px;
+    }
+
+    #pagina-cadastro select 
+    {
+        font-size: 16px;
+    }
+
+    #pagina-cadastro textarea 
+    {
+        font-size: 16px;
+    }
+
+    /* pagina-cadastro */
+
+
+    /* pagina-altera */
+
+    #pagina-altera h1 
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #pagina-altera label 
+    {
+        font-size: 20px;
+    }
+
+    #pagina-altera input 
+    {
+        font-size: 16px;
+    }
+
+    #pagina-altera select 
+    {
+        font-size: 16px;
+    }
+
+    #pagina-altera textarea 
+    {
+        font-size: 16px;
+    }
+
+    /* pagina-altera */
+    
+}
+@media screen and (max-width: 540px) {}
+@media screen and (max-width: 475px) 
+{
+    /* Formatação geral */
+
+    .modal 
+    {
+        max-width: 350px;
+        height: 330px;
+    }
+
+    /* Formatação geral */
+}
+@media screen and (max-width: 414px) {}
+@media screen and (max-width: 375px) 
+{
+    /* Formatação Geral */
+
+    .celula-desicao .botao-continua 
+    {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .celula-desicao .botao-cancelar
+    {
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+
+    .modal 
+    {
+        max-width: 260px;
+        height: 310px;
+    }
+
+    /* Formatação Geral */
+}
+@media screen and (max-width: 360px) {}
+@media screen and (max-width: 320px) 
+{
+    /* Formatação geral */
+
+    .modal .celula-desicao 
+    {
+        flex-direction: column;
+    }
+
+    .modal .celula-desicao .botao-cancelar
+    {
+        margin-bottom: 10px;
+    }
+
+    .modal 
+    {
+        height: 360px;
+    }
+    
+    /* Formatação geral */
+}
+@media screen and (max-width: 280px) {}
+
+/* Media Querys */
