@@ -21,7 +21,7 @@ if(isset($_POST['cadastro']))
         echo 
         ' <div class="alerta alerta-atencao">
              <p>O campo codigo é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
           </div>'
          ;
     }
@@ -30,7 +30,7 @@ if(isset($_POST['cadastro']))
         echo 
         ' <div class="alerta alerta-atencao">
              <p>O campo titulo é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
           </div>'
          ;
     }
@@ -39,7 +39,7 @@ if(isset($_POST['cadastro']))
         echo 
         ' <div class="alerta alerta-atencao">
              <p>O campo genero é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
           </div>'
          ;
     }
@@ -48,7 +48,7 @@ if(isset($_POST['cadastro']))
         echo 
         ' <div class="alerta alerta-atencao">
              <p>O campo situação é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
           </div>'
          ;
     }
@@ -57,7 +57,7 @@ if(isset($_POST['cadastro']))
         echo 
         ' <div class="alerta alerta-atencao">
              <p>O campo valor é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
           </div>'
          ;
     }
@@ -66,7 +66,7 @@ if(isset($_POST['cadastro']))
         echo 
         ' <div class="alerta alerta-atencao">
              <p>O campo idioma é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
           </div>'
          ;
     }
@@ -140,7 +140,7 @@ if(isset($_POST['cadastro']))
             </div>
             <div class="celula-total">
                 <div class="celular-metade">
-                    <label for="genero">Genero</label>
+                    <label for="genero">Gênero</label>
                     <select name="genero" id="genero">
                         <option value="" disabled selected>Selecione...</option>
                         <option value="Ficção Literária">Ficção Literária</option>

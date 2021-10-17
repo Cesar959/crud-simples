@@ -63,7 +63,7 @@ if(isset($_GET['id']))
        echo 
        '<div class="alerta alerta-sucesso">
             <p>Cadastro realidado com sucesso!</p>
-            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
         </div>'
         ;
     }
@@ -73,7 +73,7 @@ if(isset($_GET['id']))
        echo 
        ' <div class="alerta alerta-erro">
             <p>Ops!!, Não foi possivel cadastrar!</p>
-            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
          </div>'
         ;
     }
@@ -83,7 +83,7 @@ if(isset($_GET['id']))
        echo 
        '<div class="alerta alerta-sucesso">
             <p>Alteração realizada com sucesso!</p>
-            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
         </div>'
         ;
     }
@@ -93,7 +93,7 @@ if(isset($_GET['id']))
        echo 
        '<div class="alerta alerta-erro">
             <p>Ops!!, Não foi possivel alterar!</p>
-            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
        </div>'
         ;
     }
@@ -103,7 +103,7 @@ if(isset($_GET['id']))
        echo 
        '<div class="alerta alerta-sucesso">
             <p>Exclusão realizada com sucesso!</p>
-            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
         </div>'
         ;
     }
@@ -113,7 +113,7 @@ if(isset($_GET['id']))
        echo 
        '<div class="alerta alerta-erro">
             <p>"Ops!!, Não foi possivel excluir!</p>
-            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="">
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
         </div>'
         ;
     }
@@ -168,7 +168,7 @@ if(isset($_GET['id']))
     <!-- Modal de Confirmação de Exclusão -->
     <div class="modal">
         <h2>ALERTA</h2>
-        <img src="resource/img/bxs-error.svg" alt="">
+        <img src="resource/img/bxs-error.svg" alt="Aviso Importante">
         <p>Tem certeza que deseja excluir esse item?
         </p>
         <div class="celula-desicao">

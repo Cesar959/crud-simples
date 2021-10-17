@@ -171,7 +171,7 @@ if(isset($_POST['alterar']))
             </div>
             <div class="celula-total">
                 <div class="celular-metade">
-                    <label for="genero">Genero</label>
+                    <label for="genero">Gênero</label>
                     <select name="genero" id="genero">
                         <option value="Ficção Literária" <?php echo $genero=='Ficção Literária'?'selected':'';?>>Ficção Literária</option>
                         <option value="Não-Ficção" <?php echo $genero=='Não-Ficção'?'selected':'';?>>Não-Ficção</option>
