@@ -50,7 +50,7 @@ O projeto é um crud de livros aonde é possível cadastrar, alterar, ler e excl
 * [SQL](https://www.w3schools.com/sql/) - Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional. Muitas das características originais do SQL foram inspiradas na álgebra relacional.
 
 
-## Verção das Linguagens e Ferramentas
+## Versão das Linguagens e Ferramentas
 
 #### Servidor de base de dados
 
