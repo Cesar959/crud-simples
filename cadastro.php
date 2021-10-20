@@ -56,15 +56,15 @@ if(isset($_POST['cadastro']))
         $cadastro = new Livro();
 
         // Setando os atributos
-        $cadastro->__set("codigo",$codigo);
-        $cadastro->__set("titulo",$titulo);
-        $cadastro->__set("genero",$genero);
-        $cadastro->__set("situacao",$situacao);
-        $cadastro->__set("valor",$valor);
-        $cadastro->__set("idioma",$idioma);
-        $cadastro->__set("autor",$autor);
-        $cadastro->__set("observacao",$observacao);
-    
+        $cadastro->codigo = $codigo;
+        $cadastro->titulo = $titulo;
+        $cadastro->genero = $genero;
+        $cadastro->situacao = $situacao;
+        $cadastro->valor = $valor;
+        $cadastro->idioma = $idioma;
+        $cadastro->autor = $autor;
+        $cadastro->observacao = $observacao;
+
         // Executando o método cadastro
         $cadastro->cadastro();
     }
