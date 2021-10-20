@@ -6,14 +6,19 @@
 if(isset($_POST['cadastro']))
 {
     // Efetuando a limpea das informações enviadas
-    $codigo = filter_input(INPUT_POST,"codigo", FILTER_SANITIZE_STRING );
-    $titulo = filter_input(INPUT_POST,"titulo", FILTER_SANITIZE_STRING );
-    $genero = filter_input(INPUT_POST,"genero", FILTER_SANITIZE_STRING );
-    $situacao = filter_input(INPUT_POST,"situacao", FILTER_SANITIZE_STRING );
-    $valor =filter_input(INPUT_POST,"valor", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_THOUSAND );
-    $idioma = filter_input(INPUT_POST,"idioma", FILTER_SANITIZE_STRING );
-    $autor = filter_input(INPUT_POST,"autor", FILTER_SANITIZE_STRING );
-    $observacao = filter_input(INPUT_POST,"observacao", FILTER_SANITIZE_STRING);
+    $vars = [
+        'codigo',
+        'titulo',
+        'genero',
+        'situacao',
+        'idioma',
+        'autor',
+        'observacao',
+    ];
+    foreach ($vars as $indice) {
+        $$indice = filter_input(INPUT_POST,$indice, FILTER_SANITIZE_STRING );
+    }
+    $valor = filter_input(INPUT_POST,"valor", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_THOUSAND );
 
     // verificando ser os campos foram preenchidos
     if($codigo == "" || $codigo == null)
