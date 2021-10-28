@@ -82,7 +82,7 @@ Este projeto está licenciado sob a licença MIT - consulte o arquivo  [LICENSE.
 ## Links
 
 * [Layout do Projeto](https://www.figma.com/file/8PphXdOudTbOpwl6Jwq7MN/crud-simples?node-id=0%3A1) - Link do projeto no figma
-* [Demo do projeto](http://csantosalmeida.rf.gd/index.php) - Link da Demo
+* [Demo do projeto](http://csantosalmeida.rf.gd/crud/) - Link da Demo
 
 
 
