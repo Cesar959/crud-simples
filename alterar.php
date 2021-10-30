@@ -16,14 +16,7 @@ $lista->__set("idLivro", $id);
 $registro = $lista->listaRegistro();
 
 // Adicionado os dados em variaveis 
-$codigo = $registro[0]['codigo'];
-$titulo = $registro[0]['titulo'];
-$genero = $registro[0]['genero'];
-$situacao = $registro[0]['situacao'];
-$valor = $registro[0]['valor'];
-$idioma = $registro[0]['idioma'];
-$autor = $registro[0]['autor'];
-$observacao = $registro[0]['observacao'];
+extract($registro[0]);
 
 
 

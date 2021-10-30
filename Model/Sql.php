@@ -7,17 +7,16 @@ class Sql extends PDO
     private $banco = BANCO;
     private $usuario = USUARIO;
     private $senha = SENHA;
-    private $conexao;
 
 
     public function __construct()
     {
-        $this->conexao = new PDO("mysql:host=$this->host;dbname=$this->banco", "$this->usuario", "$this->senha");
+        parent::__construct("mysql:host=$this->host;dbname=$this->banco", "$this->usuario", "$this->senha");
     }
 
     public function executaComando($sql, $parametros = array())
     {
-        $stmt = $this->conexao->prepare($sql);
+        $stmt = $this->prepare($sql);
 
         foreach($parametros as $indice => $valor)
         {
@@ -38,7 +37,7 @@ class Sql extends PDO
 
     public function select($sql, $parametros = array())
     {
-        $stmt = $this->conexao->prepare($sql);
+        $stmt = $this->prepare($sql);
 
         foreach($parametros as $indice => $valor)
         {

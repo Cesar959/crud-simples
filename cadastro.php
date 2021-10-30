@@ -6,85 +6,65 @@
 if(isset($_POST['cadastro']))
 {
     // Efetuando a limpea das informações enviadas
-    $codigo = filter_input(INPUT_POST,"codigo", FILTER_SANITIZE_STRING );
-    $titulo = filter_input(INPUT_POST,"titulo", FILTER_SANITIZE_STRING );
-    $genero = filter_input(INPUT_POST,"genero", FILTER_SANITIZE_STRING );
-    $situacao = filter_input(INPUT_POST,"situacao", FILTER_SANITIZE_STRING );
-    $valor =filter_input(INPUT_POST,"valor", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_THOUSAND );
-    $idioma = filter_input(INPUT_POST,"idioma", FILTER_SANITIZE_STRING );
-    $autor = filter_input(INPUT_POST,"autor", FILTER_SANITIZE_STRING );
-    $observacao = filter_input(INPUT_POST,"observacao", FILTER_SANITIZE_STRING);
+    $vars = [
+        'codigo',
+        'titulo',
+        'genero',
+        'situacao',
+        'idioma',
+        'autor',
+        'observacao',
+    ];
+    foreach ($vars as $indice) {
+        $$indice = filter_input(INPUT_POST,$indice, FILTER_SANITIZE_STRING );
+    }
+    $valor = filter_input(INPUT_POST,"valor", FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_THOUSAND );
 
     // verificando ser os campos foram preenchidos
-    if($codigo == "" || $codigo == null)
-    {
-        echo 
-        ' <div class="alerta alerta-atencao">
-             <p>O campo codigo é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
-          </div>'
-         ;
-    }
-    elseif($titulo == "" || $titulo == null)
-    {
-        echo 
-        ' <div class="alerta alerta-atencao">
-             <p>O campo titulo é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
-          </div>'
-         ;
-    }
-    elseif($genero == "" || $genero == null)
-    {
-        echo 
-        ' <div class="alerta alerta-atencao">
-             <p>O campo genero é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
-          </div>'
-         ;
-    }
-    elseif($situacao == "" || $situacao == null)
-    {
-        echo 
-        ' <div class="alerta alerta-atencao">
-             <p>O campo situação é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
-          </div>'
-         ;
-    }
-    elseif($valor == "" || $valor == null)
-    {
-        echo 
-        ' <div class="alerta alerta-atencao">
-             <p>O campo valor é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
-          </div>'
-         ;
-    }
-    elseif($idioma == "" || $idioma == null)
-    {
-        echo 
-        ' <div class="alerta alerta-atencao">
-             <p>O campo idioma é obrigatorio</p>
-             <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
-          </div>'
-         ;
-    }
-    else
-    {
+    if(empty($codigo)){?>
+        <div class="alerta alerta-atencao">
+            <p>O campo codigo é obrigatorio</p>
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
+        </div>
+    <?php }elseif(empty($titulo)){?>
+        <div class="alerta alerta-atencao">
+            <p>O campo titulo é obrigatorio</p>
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
+        </div>
+    <?php }elseif(empty($genero)){?>
+        <div class="alerta alerta-atencao">
+            <p>O campo genero é obrigatorio</p>
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
+        </div>
+    <?php }elseif(empty($situacao)){?>
+        <div class="alerta alerta-atencao">
+            <p>O campo situação é obrigatorio</p>
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
+        </div>
+    <?php }elseif(empty($valor)){?>
+        <div class="alerta alerta-atencao">
+            <p>O campo valor é obrigatorio</p>
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
+        </div>
+    <?php }elseif(empty($idioma)){?>
+        <div class="alerta alerta-atencao">
+            <p>O campo idioma é obrigatorio</p>
+            <img src="resource/img/fecha.svg" onclick="fechaAlerta()" alt="Botão Fecha">
+        </div>
+    <?php }else{
         // Instanciando a class livro
         $cadastro = new Livro();
 
         // Setando os atributos
-        $cadastro->__set("codigo",$codigo);
-        $cadastro->__set("titulo",$titulo);
-        $cadastro->__set("genero",$genero);
-        $cadastro->__set("situacao",$situacao);
-        $cadastro->__set("valor",$valor);
-        $cadastro->__set("idioma",$idioma);
-        $cadastro->__set("autor",$autor);
-        $cadastro->__set("observacao",$observacao);
-    
+        $cadastro->codigo = $codigo;
+        $cadastro->titulo = $titulo;
+        $cadastro->genero = $genero;
+        $cadastro->situacao = $situacao;
+        $cadastro->valor = $valor;
+        $cadastro->idioma = $idioma;
+        $cadastro->autor = $autor;
+        $cadastro->observacao = $observacao;
+
         // Executando o método cadastro
         $cadastro->cadastro();
     }
